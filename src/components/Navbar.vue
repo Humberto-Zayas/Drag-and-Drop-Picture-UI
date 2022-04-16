@@ -1,9 +1,18 @@
 <template>
     <div class="app-title">
-        <b-button size="sm" class="return d-none d-md-block">Return To Field Medical Connect</b-button> 
-        <b-button size="sm" class="return d-md-none d-lg-none d-xl-none">Back</b-button>
+        <b-button href="/" size="sm" class="return d-none d-md-block"
+        >Return To Field Medical Connect</b-button
+        >
+        
+        <b-button href="/" size="sm" class="return d-md-none d-lg-none d-xl-none"
+        >Back</b-button
+        >
         <h1 style="margin: 0">Custom Handout Builder</h1>
-        <b-button class="d-md-none" v-b-toggle.sidebar-1>Toggle Sidebar</b-button>
+        
+        <b-button v-show="!stepThree" variant="link" class="d-md-none" v-b-toggle.sidebar-1>
+        <img src="@/assets/icons/handout-builder-icons/menu.svg" />
+        </b-button
+        >
     </div>
 </template>
 

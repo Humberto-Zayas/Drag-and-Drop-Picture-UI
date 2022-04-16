@@ -322,7 +322,7 @@
     <b-container fluid class="p-0">
       
       <b-overlay no-wrap :show="posterLoad" rounded="sm" />
-      <template>
+      <!-- <template>
         <div class="app-title">
           <b-button href="/" size="sm" class="return d-none d-md-block"
             >Return To Field Medical Connect</b-button
@@ -338,11 +338,10 @@
           </b-button
           >
         </div>
-      </template>
+      </template> -->
+      <navbar />
 
       <b-row class="flex-row" v-if="stepTwo" no-gutters>
-
-        {{ this.$root.mobile }}
         
         <b-col md="7" class="left-col">
           <b-row no-gutters>
@@ -620,11 +619,13 @@
 <script>
 import draggable from "vuedraggable";
 import config from "@/data/config"; //config.api holds endpoint for api
+import Navbar from '@/components/Navbar.vue';
 
 export default {
   name: "hello",
   components: {
     draggable,
+    Navbar,
   },
   data() {
     return {
@@ -671,7 +672,6 @@ export default {
   async created() {
     // Get Areas + Topics on creation
     // GET request using fetch with async/await
-    // this.$bvModal.show('remove-image-modal');
     this.posterLoad = true;
     this.api = config.api;
     const response = await fetch(config.api + "/api/therapeutic_areas");
@@ -683,26 +683,14 @@ export default {
       topics: topics,
     }));
     this.areaOptions = transformed;
-    //const defaultOption = { value: null, text: 'Select a therapeutic area' },
-
-    //this.mapTopics(this.areaOptions[selected].topics);
-    //this.initTwo(1); //load default options from api
     this.posterLoad = false;
-    // this.areaOptions.unshift({
-    //   value: null,
-    //   text: "Select a therapeutic area",
-    // });
     this.$bvModal.show("modal-topic");
-
     addEventListener('resize', () => {
       this.mobile = innerWidth <= 2000
     })
-    
-
   },
   methods: {
     sidebarMobileImageClicked(graphic) { 
-
       const h = this.$createElement;
       const messageVNode = h('div', { class: ['foobar'] }, [
         h('p', { class: ['text-center'] }, [
@@ -710,14 +698,11 @@ export default {
           
         ]),
       ])
-
       console.log('Tap to Add Called: ', graphic);
-
       //store some data
       let list2 = this.list2; //new array for drag drop
       let origin = this.currentTopic.handout_graphics; //original array from api
-      
-            //manip data in array if list has room
+      //manip data in array if list has room
       if (this.list2.length > 2) {
         console.log('Max reached'); 
         
