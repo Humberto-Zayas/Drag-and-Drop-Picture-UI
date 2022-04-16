@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.4" height="29.4" viewBox="0 0 29.4 29.4">
+  <g id="print-icon" transform="translate(0.7 0.7)">
+    <path id="Rectangle_274" data-name="Rectangle 274" d="M2,0H15a2,2,0,0,1,2,2V7a0,0,0,0,1,0,0H0A0,0,0,0,1,0,7V2A2,2,0,0,1,2,0Z" transform="translate(5)" fill="none" stroke="#fff" stroke-width="1.4"/>
+    <g id="Group_429" data-name="Group 429" transform="translate(6 14)">
+      <path id="Rectangle_275" data-name="Rectangle 275" d="M1,0H15a1,1,0,0,1,1,1V12a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V1A1,1,0,0,1,1,0Z" fill="none" stroke="#fff" stroke-width="1.4"/>
+    </g>
+    <g id="Group_430" data-name="Group 430" transform="translate(0 7)">
+      <path id="Subtraction_32" data-name="Subtraction 32" d="M6.052,14H1.806A1.781,1.781,0,0,1,0,12.249V1.75A1.781,1.781,0,0,1,1.806,0H26.194A1.781,1.781,0,0,1,28,1.75v10.5A1.781,1.781,0,0,1,26.194,14h-4.2V8a1,1,0,0,0-1-1H7.052a1,1,0,0,0-1,1v6Z" transform="translate(0 0)" fill="none" stroke="#fff" stroke-width="1.4"/>
+    </g>
+    <line id="Line_6" data-name="Line 6" x2="8.5" transform="translate(9.803 21)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.7"/>
+    <line id="Line_7" data-name="Line 7" x2="8.5" transform="translate(9.697 17.601)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.7"/>
+    <line id="Line_8" data-name="Line 8" x2="8.5" transform="translate(9.697 24.4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.7"/>
+    <circle id="Ellipse_24" data-name="Ellipse 24" cx="1.5" cy="1.5" r="1.5" transform="translate(3 9)" fill="#fff"/>
+  </g>
+</svg>

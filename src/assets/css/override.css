@@ -1,0 +1,154 @@
+.bg-primary,
+.btn-primary {
+    background-color: #008059 !important;
+}
+
+.btn-primary {
+    border-color: #008059 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.7rem 5rem;
+    font-size: 1rem
+}
+
+.buttonStep {
+    padding: 0.4rem 3rem;
+}
+
+.btn-primary .next {
+    width: 8px;
+    margin-top: -2px;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-body {
+    padding: 3rem;
+    padding-bottom: 0;
+}
+
+.modal-content {
+    border-radius: 1.4rem;
+}
+
+.modal-header {
+    border-top-left-radius: 1.3rem;
+    border-top-right-radius: 1.3rem;
+    text-align: center;
+}
+
+.modal-title {
+    width: 100%;
+    font-weight: bold;
+}
+
+.topic-edit-button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 16px;
+    padding: 0.2rem 0.4rem;
+}
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.small {
+    font-size: 70%;
+}
+
+.btn-third-step {
+    padding: 0.7rem 3.3rem;
+    border-radius: 8px;
+}
+
+.custom-select {
+    border: 3px solid rgb(217 217 217);
+    border-radius: 8px;
+    background: rgb(216, 216, 216);
+    background: linear-gradient(180deg, rgba(168,168,168,1) 0%, rgba(180,180,180,1) 5%, rgba(255,255,255,1) 100%);
+}
+
+textarea.form-control {
+    height: 200px;
+}
+
+.form-control,
+.form-control:focus {
+    border: 3px solid rgb(217 217 217);
+    border-radius: 8px;
+    background: rgb(239, 239, 239);
+    /* background: linear-gradient(180deg, rgba(168,168,168,1) 0%, rgba(180,180,180,1) 2%, rgba(255,255,255,1) 100%); */
+    /* height: 200px; */
+    box-shadow: inset -5px 5px 10px rgb(0 0 0 / 25%);
+    margin-top: 0px !important;
+}
+
+.custom-select * {
+    font-size: 25px;
+}
+
+.custom-select:focus {
+    border-color: #d3d3d3;
+}
+
+/* .b-sidebar {
+    bottom: 0;
+    top: auto;
+    height: 50%;
+} */
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    height: 99vh;
+}
+
+/* @media screen and (min-width: 1440px) {
+    .left-col {
+        padding-left: 10rem !important;
+    }
+    .right-col {
+        padding-right: 10rem !important;
+    }
+} */
+
+.b-sidebar > .b-sidebar-header {
+    font-size: 20px;
+    text-align: center;
+}
+
+.b-sidebar strong {
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (max-width: 622px) {
+    .btn-third-step {
+        display: block !important;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .btn-primary {
+        padding: 0.7rem 2rem;
+    }
+
+    .modal-body {
+        padding: 1.5rem 1.5rem 0;
+    }
+    
+}
